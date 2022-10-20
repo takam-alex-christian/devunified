@@ -1,27 +1,107 @@
 .loginForm{
-
+    padding: 0 20%;
+    max-width: 360px;
 }
 
 /* Form heading*/
 .formHeading{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
 
+.formHeading .heading{
+    margin: 0;
+    padding: 0;
+    /* line-height: 1; */
+}
+
+.formHeading .subHeading{
+    margin: 0;
+    padding: 0;
+}
+
+/* for container */
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    /* background-color: red; */
+}
+
+.formContainer label{
+    margin: 0 0 0.25rem 0;
+    font-weight: 500;
+    font-size: 0.75rem;
+    color:#454545;
+}
+
+.emailContainer, .passwordContainer{
+    display: flex;
+    flex-direction: column;
+}
+.emailContainer>input[id="login-email"], .passwordContainer>input[id="login-password"] {
+    letter-spacing: 0.5px;
+    font-family: "poppins";
+    height: 40px;
+    font-size: 0.875rem;
+    padding: 0 0.5rem;
+    border:1px solid #dedede ;
+    border-radius:0.5rem;
+    color:#2e2e2e;
 }
 
 
-
-
-.emailContainer{
-
-}
-
-
-
-.passwordContainer{
-
-}
-
-
-
+/* Remember me container */
 .rememberMeContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 0;
 
+    font-size: 0.85rem;
+
+}
+.rememberMeContainer>input{
+    width: 1rem;
+}
+/* #End of remember me container */
+
+/* the login button container */
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.buttonContainer>button{
+    font-family: "poppins";
+    font-weight: 500;
+    font-size: 0.875rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.buttonContainer .loginButton{
+    color:#ffffff;
+    background-color: #185adb;
+    letter-spacing: 0.5px;
+}
+
+.buttonContainer .signInWithGoogle{
+    background-color: #fff;
+    border:1px solid #e6e6e6;
+    
+}
+.buttonContainer .signInWithGoogle>img{
+    height: 1.2rem;
+    vertical-align:text-top;
+    margin:0 8px 0 0 ;
+}
+
+.formFooterContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
