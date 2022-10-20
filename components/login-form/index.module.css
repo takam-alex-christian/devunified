@@ -1,6 +1,10 @@
 .loginForm{
+    display: flex;
+    flex-direction: column;
     padding: 0 20%;
     max-width: 360px;
+    gap: 2rem;
+    /* background-color: red; */
 }
 
 /* Form heading*/
@@ -13,12 +17,14 @@
 .formHeading .heading{
     margin: 0;
     padding: 0;
+    color: #1f1f1f;
     /* line-height: 1; */
 }
 
 .formHeading .subHeading{
     margin: 0;
     padding: 0;
+    color: #1f1f1f;
 }
 
 /* for container */
