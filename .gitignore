@@ -1,7 +1,6 @@
 # the ones i've added and can quickly verify
 .env
-/.next
-/node_modules
+.next/
 
 # Logs
 logs
