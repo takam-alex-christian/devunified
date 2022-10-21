@@ -5,10 +5,10 @@ export default function LoginForm() {
     return (
 
         <div className={styles.loginForm}>
-            <div className={styles.formHeading}>
+            {/* <div className={styles.formHeading}>
                 <h1 className={styles.heading}>Welcome back</h1>
                 <p className={styles.subHeading}>Please enter your credentials to log in</p>
-            </div>
+            </div> */}
 
             <form method="post" action="/login">
                 <div className={styles.formContainer}>
@@ -27,20 +27,16 @@ export default function LoginForm() {
                         <input id="login-password" placeholder='Pass•••d' />
                     </div>
 
-                    {/* remember me container */}
-                    <div className={styles.rememberMeContainer}>
-                        <div>
-                            <input type="checkbox" />
-                            <label>Remember me for 30 days</label>
-                        </div>
-                        <div>
-                            <a href="#">Forgot password</a>
-                        </div>
+                    {/* password forgotten me container */}
+
+                    <div className={styles.passwordForgottenContainer}>
+                        <a href="#">Password forgotten?</a>
                     </div>
+
 
                     {/* login buttons */}
                     <div className={styles.buttonContainer}>
-                        <button className={styles.loginButton}>Login</button>
+                        <button className={styles.loginButton}>Log in</button>
                         <button className={styles.signInWithGoogle}><img src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA" />Sign in with Google</button>
                     </div>
 
